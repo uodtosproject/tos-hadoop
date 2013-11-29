@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-beanutils-1.8.3.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-beanutils-bean-collections-1.8.3.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-beanutils-core-1.8.3.jar"/>
@@ -10,7 +9,7 @@
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-configuration-1.6.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-httpclient-3.1.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-lang-2.4.jar"/>
-	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-logging-api-1.0.4.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/ezmorph-1.0.6.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/fluent-hc-4.2.5.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/hadoop-core-1.1.2.jar"/>
@@ -30,8 +29,11 @@
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/slf4j-api-1.5.5.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/slf4j-jdk14-1.5.5.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/slf4j-log4j12-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/indexer.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/solr/dist/solr-solrj-4.3.0.jar"/>
 	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/solr/dist/solrj-lib/noggit-0.5.jar"/>
+	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/jarsHadoop/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/rkhayasidajunior/Dev/analytics/indexer.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

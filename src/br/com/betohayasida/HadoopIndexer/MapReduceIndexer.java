@@ -93,6 +93,42 @@ public class MapReduceIndexer {
     	init();
     	
     	loadSites();
+    	boolean skip = false;
+    	while(true){
+    		
+    		if(!skip){
+		        final Configuration conf = new Configuration();
+		        MongoConfigUtil.setInputURI(conf, "mongodb://127.0.0.1:27017/crawler.pages");
+		        MongoConfigUtil.setCreateInputSplits(conf, false);
+		        
+		        final Job job = new Job(conf, "mapreduce");
+		        FileOutputFormat.setOutputPath(job, new Path("C:\\TOS\\output" + System.currentTimeMillis()));
+		 	   
+		        job.setJarByClass(MapReduceIndexer.class);
+		
+		        job.setMapperClass(DocMapper.class);
+		        job.setReducerClass(DocReducer.class);
+		        job.setNumReduceTasks(1);
+		        
+		        job.setOutputKeyClass(Text.class);
+		        job.setOutputValueClass(Text.class);
+		
+		        job.setInputFormatClass(MongoInputFormat.class);
+		        //job.setOutputFormatClass(MongoOutputFormat.class);
+		
+		        System.exit(job.waitForCompletion( true ) ? 0 : 1);
+    		}
+    		List<String> oldParents = currentParents;
+        	loadSites();
+        	skip = oldParents.equals(currentParents);
+    	}
+    }
+    
+    public void run( String[] args ) throws Exception{
+    	
+    	init();
+    	
+    	loadSites();
     	
         final Configuration conf = new Configuration();
         MongoConfigUtil.setInputURI(conf, "mongodb://127.0.0.1:27017/crawler.pages");
